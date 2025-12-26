@@ -24,10 +24,10 @@ def auto_push(message=None):
                               capture_output=True, text=True)
         
         if result.returncode == 0:
-            print(f"✓ Code pushed successfully: {message}")
+            print(f"[SUCCESS] Code pushed successfully: {message}")
             return True
         else:
-            print(f"Push failed: {result.stderr}")
+            print(f"[ERROR] Push failed: {result.stderr}")
             return False
     except subprocess.CalledProcessError as e:
         print(f"Error: {e.stderr.decode() if e.stderr else str(e)}")
