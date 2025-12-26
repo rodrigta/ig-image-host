@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+outputs/images/*
+!outputs/images/.gitkeep
+outputs/instagram_session.json
+
